@@ -7,4 +7,5 @@ It takes the image from the camera, if it detects a face or a body, it sends a p
 **Install:**
 ```bash
 pip install -r requirements.txt
-``
+```
+
