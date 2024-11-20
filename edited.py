@@ -7,6 +7,15 @@ import cv2
 import time
 import datetime
 import os
+from pyngrok import ngrok
+
+
+public_url = ngrok.connect(5000)
+print(public_url.public_url)
+
+
+
+
 
 
 app = Flask(__name__)
@@ -106,4 +115,4 @@ def video():
 
 
 if __name__ == '__main__':
-    app.run(debug=True,port=5000)
+    app.run(port=5000)
